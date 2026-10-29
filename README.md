@@ -21,3 +21,16 @@ npm run dev
 Import into Vercel and set `QLOO_API_KEY` as an env var. No secrets are committed.
 
 MIT licensed.
+
+## How it works (for judges)
+1. **Resolve**: each taste goes to `GET /search` and comes back as a Qloo entity id.
+2. **Affinities**: the resolved ids go to `GET /v2/insights` (`signal.interests.entities`) and return cross-domain affinities.
+3. **Map**: the agent scores entity names, tags and affinities against `data/canon-map.json` clusters and returns the entry point, the reading order, the themes, **cited signals**, and the full **tool-call trace**.
+
+### Modes
+| Env | Behavior |
+|---|---|
+| no `QLOO_API_KEY` | STUB mode with an amber banner. Fixtures are labeled `STUB` and are never presented as Qloo data |
+| `QLOO_API_KEY` (+ optional `QLOO_BASE_URL`) | LIVE mode with a green banner. Real Qloo calls; no code change needed |
+
+`GET /api/recommend` returns `{live:boolean}` for a quick health check.
