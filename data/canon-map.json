@@ -1,0 +1,11 @@
+{"_note":"Public-safe: Fractured Code / The Neural Wars Chapter 1 only. No spoilers for Ch.2+.",
+"entryPoints":{
+ "ch1":{"title":"Fractured Code — Chapter 1 (free sample)","url":"https://goalworld.fun","why":"The public opening of the canon: a world where simulations wage war and continuity itself is contested."},
+ "waitlist":{"title":"Studio waitlist","url":"https://goalworld.fun","why":"Get notified as the canon expands."},
+ "livingCanon":{"title":"Living Canon angle","url":"https://goalworld.fun","why":"Treat the lore as a persistent world: factions, provenance and continuity, like a game universe."}},
+"themes":["simulation war","continuity","provenance","AI factions"],
+"clusters":[
+ {"id":"cyberpunk-film","label":"Cyberpunk / tech-noir film fans","keywords":["blade runner","matrix","ghost in the shell","akira","cyberpunk","ex machina","minority report","tron","sci-fi","science fiction","thriller"],"entries":["ch1"]},
+ {"id":"hard-sf-books","label":"Hard-SF / speculative book fans","keywords":["neuromancer","dune","foundation","asimov","gibson","three-body","liu cixin","stephenson","snow crash","banks","culture","philip k. dick","novel","book"],"entries":["ch1","waitlist"]},
+ {"id":"game-lore","label":"Game lore fans","keywords":["mass effect","deus ex","cyberpunk 2077","nier","destiny","halo","soma","portal","video game","game","rpg"],"entries":["livingCanon","ch1"]}],
+"fallback":"ch1"}
